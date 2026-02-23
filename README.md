@@ -171,6 +171,20 @@ Data Analytics & Business Intelligence Enthusiast
 
 ---
 
+# 📊 Dataset Information
+This project uses a **synthetic business dataset** created and structured to simulate a real-world eCommerce and marketing analytics environment.
+The base transactional structure is inspired by publicly available retail datasets. The original dataset used for reference and simulation is available here:
 
-Do you want to start building the **Python notebook structure first**, or
-do you want to prepare the **dataset structure properly first**?
+🔗 Original Dataset Source:
+https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls
+Additional marketing and customer behavior data were synthetically generated to simulate a complete multi-source business intelligence system.
+
+---
+
+# ⚠️ Disclaimer
+
+This project is developed for educational and portfolio demonstration purposes only.
+All business scenarios, company names, and analytics outcomes are simulated to represent real-world business intelligence implementations.
+
+---
+
