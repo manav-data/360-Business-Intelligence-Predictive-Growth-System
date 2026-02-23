@@ -164,13 +164,6 @@ This system enables businesses to:
 
 ---
 
-# 👨‍💻 Author
-
-Manav
-Data Analytics & Business Intelligence Enthusiast
-
----
-
 # 📊 Dataset Information
 This project uses a **synthetic business dataset** created and structured to simulate a real-world eCommerce and marketing analytics environment.
 The base transactional structure is inspired by publicly available retail datasets. The original dataset used for reference and simulation is available here:
@@ -188,3 +181,10 @@ All business scenarios, company names, and analytics outcomes are simulated to r
 
 ---
 
+# 👨‍💻 Author
+
+Manav
+
+Data Analytics & Business Intelligence Enthusiast
+
+---
