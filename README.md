@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 
 The **360° Business Intelligence & Predictive Growth System** is a full-stack analytics and AI-driven platform designed to integrate sales, marketing, customer, and operational data into a unified intelligence ecosystem.
-This project simulates a real-world business scenario where companies struggle to centralize data, measure performance accurately, and predict future growth. The system provides data engineering, advanced analytics, predictive modeling, business KPI tracking, and interactive dashboards — all in one structured solution.
+This project simulates a real-world business scenario where companies struggle to centralize data, measure performance accurately, and predict future growth. The system provides data engineering, advanced analytics, predictive modeling, business KPI tracking, and interactive dashboards, all in one structured solution.
 This project is built using **R and Python**, demonstrating both statistical expertise and production-level analytics development.
 
 ---
