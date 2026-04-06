@@ -1,0 +1,86 @@
+---
+title: "360° Business Intelligence - Statistical Analysis"
+author: "Manav"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# 1. Introduction
+
+This report performs statistical analysis on business data including sales, profit, and discount behavior. The objective is to validate business insights and support data-driven decision-making.
+
+# 2. Load Libraries
+
+---
+title: "360° Business Intelligence - Statistical Analysis"
+author: "Manav"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# 1. Introduction
+
+This report performs statistical analysis on business data including sales, profit, and discount behavior. The objective is to validate business insights and support data-driven decision-making.
+
+# 2. Load Libraries
+
+```{r}
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(corrplot)
+library(cluster)
+
+data <- read_excel("C:/Users/manav/Desktop/360 BI data.xls")
+head(data)
+
+# Remove missing values
+data <- na.omit(data)
+
+# Convert postal code to character (avoid warnings)
+if("Postal Code" %in% colnames(data)){
+  data$`Postal Code` <- as.character(data$`Postal Code`)
+}
+
+summary(data)
+
+ggplot(data, aes(x = Sales)) +
+  geom_histogram(bins = 30) +
+  theme_minimal() +
+  labs(title = "Sales Distribution")
+
+ggplot(data, aes(x = Discount, y = Profit)) +
+  geom_point() +
+  theme_minimal() +
+  labs(title = "Profit vs Discount")
+
+
+data$High_Discount <- ifelse(data$Discount > 0, "Yes", "No")
+
+t_test_result <- t.test(Profit ~ High_Discount, data = data)
+t_test_result
+
+numeric_data <- data %>% select(Sales, Profit, Discount)
+
+cor_matrix <- cor(numeric_data)
+cor_matrix
+
+corrplot(cor_matrix, method = "circle")
+
+model <- lm(Sales ~ Profit + Discount, data = data)
+summary(model)
+
+set.seed(123)
+
+cluster_data <- data %>% select(Sales, Profit)
+
+kmeans_model <- kmeans(cluster_data, centers = 3)
+
+data$Cluster <- kmeans_model$cluster
+
+ggplot(data, aes(x = Sales, y = Profit, color = factor(Cluster))) +
+  geom_point() +
+  theme_minimal() +
+  labs(title = "Customer Segmentation")
+
+
