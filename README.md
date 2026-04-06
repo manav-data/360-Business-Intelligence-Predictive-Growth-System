@@ -9,7 +9,6 @@ The entire workflow is implemented in:
 * 📊 **R (R Notebook)** – Statistical analysis & modeling
 * 📈 **Excel** – KPI modeling & business simulations
 * 📊 **Power BI** – Executive dashboards
-* 📄 **Final PDF Report** – Complete business case documentation
 
 ---
 
@@ -42,9 +41,6 @@ This project demonstrates both technical depth and business understanding.
 │
 ├── PowerBI_Dashboard/
 │   └── Executive_Dashboard.pbix
-│
-├── Report/
-│   └── Final_Business_Report.pdf
 │
 └── README.md
 ```
@@ -115,18 +111,6 @@ The Power BI dashboard includes:
 * Geographic performance
 Designed for executive-level decision-making.
 
----
-
-# 📄 Final Report (PDF)
-The final PDF report includes:
-1. Business Problem Statement
-2. Data Architecture
-3. Analysis Performed
-4. Predictive Model Results
-5. Business Insights
-6. Strategic Recommendations
-7. Dashboard Screenshots
-This report simulates a real client deliverable.
 
 ---
 
